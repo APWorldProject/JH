@@ -1,0 +1,588 @@
+div.Upper-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 140px;
+    background: linear-gradient(320deg, rgb(12, 140, 172), rgb(15, 147, 180), rgb(12, 127, 155));
+    border-bottom: 4px solid rgb(0, 0, 0)
+}
+
+div.Upper-navbar-logo-container {
+    display: flex;
+}
+
+div.Upper-navbar-logo {
+    display: flex;
+    margin-left: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div.navbar-menu-button-containter {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-menu-button-bars-containter {
+    display: block;
+    cursor: pointer;
+    padding: 0px;
+    transition: opacity 100ms;
+    transition: box-shadow 200ms;
+}
+
+.navbar-menu-button-bars-containter:hover {
+    opacity: .75;
+}
+
+.navbar-menu-button-bars-containter:active {
+    opacity: .55;
+}
+
+.navbar-menu-button-bar1, .navbar-menu-button-bar2, .navbar-menu-button-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Rotate first bar */
+.animate .navbar-menu-button-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.animate .navbar-menu-button-bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.animate .navbar-menu-button-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#Upper-navbar-buttons-menu-container {
+    display: none;
+    margin-top: 5px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#Upper-navbar-buttons-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(93, 93, 93);
+}
+
+div.menu-Mohamed_Bouaziz-container {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+a.menu-Mohamed_Bouaziz {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, .45);
+    text-decoration: none;
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+a.menu-Mohamed_Bouaziz:hover {
+    opacity: .75;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+a.menu-Mohamed_Bouaziz:active {
+    opacity: .5;
+}
+
+div.menu-Economic_Liberation-container {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+a.menu-Economic_Liberation {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, .45);
+    text-decoration: none;
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+a.menu-Economic_Liberation:hover {
+    opacity: .75;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+a.menu-Economic_Liberation:active {
+    opacity: .5;
+}
+
+div.menu-Arab_Spring-container {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+a.menu-Arab_Spring {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, .45);
+    text-decoration: none;
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+a.menu-Arab_Spring:hover {
+    opacity: .75;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+a.menu-Arab_Spring:active {
+    opacity: .5;
+}
+
+div.menu-Egypt-container {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+a.menu-Egypt {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, .45);
+    text-decoration: none;
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+a.menu-Egypt:hover {
+    opacity: .75;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+a.menu-Egypt:active {
+    opacity: .5;
+}
+
+div.menu-Social_Media-container {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a.menu-Social_Media {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, .45);
+    text-decoration: none;
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+a.menu-Social_Media:hover {
+    opacity: .75;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+a.menu-Social_Media:active {
+    opacity: .5;
+}
+
+a.Unit-9 {
+    color: rgb(247, 247, 247);
+    cursor: pointer;
+    opacity: 1;
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, .55);
+    transition: opacity 100ms;
+    user-select: none;
+}
+
+img.hoggard-logo-upper-navbar {
+    height: 100px;
+    width: 100px;
+    margin-left: 15px;
+    user-select: none;
+}
+
+a.Unit-9:hover {
+    opacity: .95;
+    transition: opacity 100ms;
+}
+
+a.Unit-9:active {
+    opacity: .8;
+    transition: opacity 100ms;
+}
+
+div.Upper-navbar-buttons {
+    display: flex;
+    flex: 1;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+}
+
+a.Mohamed_Bouaziz {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);;
+    text-decoration: none;
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+a.Mohamed_Bouaziz:hover {
+    opacity: .75;
+    color: rgb(239, 162, 177);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    transition: color 200ms;
+}
+
+a.Mohamed_Bouaziz:active {
+    opacity: .5;
+    transition: opacity 100ms;
+}
+
+a.Economic_Liberation {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);;
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+a.Economic_Liberation:hover {
+    opacity: .75;
+    color: rgb(239, 162, 177);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    transition: color 200ms;
+}
+
+a.Economic_Liberation:active {
+    opacity: .5;
+    transition: opacity 100ms;
+}
+
+a.Arab_Spring {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+a.Arab_Spring:hover {
+    opacity: .75;
+    color: rgb(239, 162, 177);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    transition: color 200ms;
+}
+
+a.Arab_Spring:active {
+    opacity: .5;
+    transition: opacity 100ms;
+}
+
+a.Egypt {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+a.Egypt:hover {
+    opacity: .75;
+    color: rgb(239, 162, 177);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    transition: color 200ms;
+}
+
+a.Egypt:active {
+    opacity: .5;
+    transition: opacity 100ms;
+}
+
+a.Social_Media {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    opacity: 1;
+    border-bottom: 5px solid rgba(220, 20, 6, 0);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+    user-select: none;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+a.Social_Media:hover {
+    opacity: .75;
+    color: rgb(239, 162, 177);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: opacity 100ms;
+    transition: border-bottom 200ms;
+    transition: color 200ms;
+}
+
+a.Social_Media:active {
+    opacity: .5;
+    transition: opacity 100ms;
+}
+
+@media screen and (max-width: 1480px) {
+    div.Upper-navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    div.Upper-navbar-logo {
+        margin-left: 0px;
+    }
+
+    img.hoggard-logo-upper-navbar {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #Upper-navbar-buttons-menu-container-override {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div.Upper-navbar {
+        display: block;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    div.Upper-navbar-logo-container {
+        display: block;
+    }
+
+    img.hoggard-logo-upper-navbar {
+        width: 70px;
+        height: 70px;
+    }
+
+    a.Unit-9 {
+        font-size: 35px;
+    }
+
+    div.Upper-navbar-buttons {
+        display: none;
+    }
+
+    div.Upper-navbar-buttons-menu-container {
+        display: block;
+    }
+
+    div.navbar-menu-button-containter {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    div.Upper-navbar-buttons {
+        height: 150px;
+    }
+
+    a.Mohamed_Bouaziz {
+        font-size: 21px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 3px solid rgba(220, 20, 6, 0);
+    }
+
+    a.Economic_Liberation {
+        font-size: 21px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 3px solid rgba(220, 20, 6, 0);
+    }
+
+    a.Arab_Spring {
+        font-size: 21px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 3px solid rgba(220, 20, 6, 0);
+    }
+
+    a.Egypt {
+        font-size: 21px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 3px solid rgba(220, 20, 6, 0);
+    }
+
+    a.Social_Media {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-bottom: 3px solid rgba(220, 20, 6, 0);
+    }
+
+    img.hoggard-logo-upper-navbar {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    img.hoggard-logo-upper-navbar {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    div.upper-navbar {
+        align-items: center;
+        justify-content: center;
+    }
+    div.Upper-navabr-logo {
+        width: 200px;
+    }
+
+    img.hoggard-logo-upper-navbar {
+        width: 55px;
+        height: 55px;
+    }
+
+    a.Unit-9 {
+        font-size: 29px;
+    }
+}

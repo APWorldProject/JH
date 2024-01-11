@@ -1,0 +1,756 @@
+html { width:100%; height:100%; margin:0px; }
+body { width:100%; height:100%; margin:0px; }
+
+html {
+    background-color: rgb(68, 68, 68);
+}
+
+div.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 35, 35);
+    height: fit-content;
+    border-top: 3px solid rgb(106, 106, 106);
+}
+
+p.footer-made-by {
+    color: white;
+    font-size: 13px;
+    margin-block-end: 0em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+p.footer-county {
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+div.background-image {
+    display: flex;
+    flex: 1;
+    min-height: 400px;
+    max-height: 600px;
+    background-color: rgb(13, 105, 128);
+    background-image: url(images_folder/ap-world-map.png);
+    background-size: cover;
+    background-position-y: 30%;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    align-items: center;
+}
+
+div.summary-page {
+    display: flex;
+    flex: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+}
+
+p.summary {
+    font-size: 140%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    user-select: none;
+}
+
+.imgSwiper{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+img.columbia8 {
+    object-fit: cover;
+    object-position: center 75%;
+}
+
+div.swiper-button-next {
+    color: white;
+}
+
+div.swiper-button-prev {
+    color: white;
+}
+
+div.swiper-pagination {
+    color: white;
+}
+
+div.topics-page {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(320deg, rgb(12, 140, 172), rgb(15, 147, 180), rgb(12, 127, 155));
+    padding-bottom: 50px;
+}
+
+div.topics-heading {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+p.topics {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    user-select: none;
+}
+
+div.topics-row1 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button.arab-spring-collapsible-button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+div.arab-spring {
+    display: flex;
+    flex: 1;
+    height: 200px;
+    min-width: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgba(255, 255, 255, .5);
+    background-image: url(images_folder/apworld-arab-spring2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0);
+    user-select: none;
+}
+
+div.arab-spring:hover {
+    box-shadow: 4px 4px 20px rgb(255, 255, 255);
+    transition: box-shadow 200ms;
+}
+
+button.economic-liberation-collapsible-button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+div.economic-liberation {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    min-width: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url(images_folder/apworld-economic-liberation1.png);
+    background-size: 101%;
+    background-position-y: 80%;
+    background-position-x: center;
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0);
+    user-select: none;
+}
+
+div.economic-liberation:hover {
+    box-shadow: 4px 4px 20px rgb(255, 255, 255);
+    transition: box-shadow 200ms;
+}
+
+div.topics-info-rows {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#arab-spring-box {
+    display: none;
+    flex: 1;
+    margin-left: 100px;
+    user-select: none;
+}
+
+#arab-spring-info {
+    display: none;
+    flex: 1;
+    margin-top: 7px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: rgb(93, 93, 93);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    user-select: none;
+}
+
+a.arab-spring {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(19, 169, 255);
+}
+
+#economic-liberation-box {
+    display: none;
+    flex: 1;
+    margin-right: 100px;
+    user-select: none;
+}
+
+#economic-liberation-info {
+    display: none;
+    flex: 1;
+    margin-top: 7px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: rgb(93, 93, 93);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    user-select: none;
+}
+
+a.economic-liberation {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(19, 169, 255);
+}
+
+div.topics-row2 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+button.mohamed-bouaziz-collapsible-button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+div.mohamed-bouaziz {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    min-width: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url(images_folder/apworld-Mohamed-Bouaziz1.png);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0);
+    user-select: none;
+}
+
+div.mohamed-bouaziz:hover {
+    box-shadow: 4px 4px 20px rgb(255, 255, 255);
+    transition: box-shadow 200ms;
+}
+
+button.egypt-collapsible-button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+div.egypt {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    min-width: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url(images_folder/apworld-egypt2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0);
+    user-select: none;
+}
+
+div.egypt:hover {
+    box-shadow: 4px 4px 20px rgb(255, 255, 255);
+    transition: box-shadow 200ms;
+}
+
+#mohamed-bouaziz-box {
+    display: none;
+    flex: 1;
+    margin-left: 100px;
+    user-select: none;
+}
+
+#mohamed-bouaziz-info {
+    display: none;
+    flex: 1;
+    margin-top: 7px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: rgb(93, 93, 93);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    user-select: none;
+}
+
+a.mohamed-bouaziz {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(19, 169, 255);
+}
+
+#egypt-box {
+    display: none;
+    flex: 1;
+    margin-right: 100px;
+    user-select: none;
+}
+
+#egypt-info {
+    display: none;
+    flex: 1;
+    margin-top: 7px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: rgb(93, 93, 93);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    user-select: none;
+}
+
+a.egypt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(19, 169, 255);
+}
+
+div.topics-row3 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+div.social-media {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    min-width: 300px;
+    margin-left: 28%;
+    margin-right: 28%;
+    background-image: url(images_folder/apworld-social-media1.webp);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px rgb(0, 0, 0);
+    user-select: none;
+}
+
+div.social-media:hover {
+    box-shadow: 4px 4px 20px rgb(255, 255, 255);
+    transition: box-shadow 200ms;
+}
+
+#social-media-box {
+    display: none;
+    flex: 1;
+    margin-left: 28%;
+    margin-right: 28%;
+    user-select: none;
+}
+
+#social-media-info {
+    display: none;
+    flex: 1;
+    margin-top: 7px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: rgb(93, 93, 93);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    user-select: none;
+}
+
+a.social-media {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(19, 169, 255);
+}
+
+button.social-media-collapsible-button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+div.footer {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1065px) {
+    div.hoggard-background-image {
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        background-position-y: center;
+    }
+
+    div.arab-spring {
+        background-position-y: unset;
+    }
+
+    #arab-spring-info {
+        font-size: 90%;
+    }
+
+    #economic-liberation-info {
+        font-size: 90%;
+    }
+
+    #mohamed-bouaziz-info {
+        font-size: 90%;
+    }
+
+    #egypt-info {
+        font-size: 90%;
+    }
+
+    #social-media-info {
+        font-size: 90%;
+    }
+
+    div.topics-row2 {
+        margin-top: 50px;
+    }
+
+    div.topics-row3 {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #arab-spring-box {
+        margin-left: 30px;
+    }
+
+    #economic-liberation-box {
+        margin-right: 30px;
+    }
+
+    #mohamed-bouaziz-box {
+        margin-left: 30px;
+    }
+
+    #egypt-box {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div.arab-spring {
+        height: 150px;
+        min-width: 250px;
+    }
+
+    div.economic-liberation {
+        height: 150px;
+        min-width: 250px;
+    }
+
+    div.mohamed-bouaziz {
+        height: 150px;
+        min-width: 250px;
+    }
+
+    div.egypt {
+        height: 150px;
+        min-width: 250px;
+    }
+
+    div.social-media {
+        height: 150px;
+        min-width: 250px;
+        margin-right: 31%;
+        margin-left: 31%;
+    }
+
+    #arab-spring-info {
+        font-size: 85%;
+    }
+
+    #economic-liberation-info {
+        font-size: 85%;
+    }
+
+    #mohamed-bouaziz-info {
+        font-size: 85%;
+    }
+
+    #egypt-info {
+        font-size: 85%;
+    }
+
+    #social-media-info {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    div.hoggard-background-image {
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        background-position-y: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    div.topics-row2 {
+        margin-top: 50px;
+    }
+
+    div.topics-row3 {
+        margin-top: 50px;
+    }
+
+    div.arab-spring {
+        height: 100px;
+        min-width: 160px;
+    }
+
+    div.economic-liberation {
+        height: 100px;
+        min-width: 160px;
+    }
+
+    div.mohamed-bouaziz {
+        height: 100px;
+        min-width: 160px;
+    }
+
+    div.egypt {
+        height: 100px;
+        min-width: 160px;
+    }
+
+    div.social-media {
+        height: 100px;
+        min-width: 160px;
+        margin-right: 35%;
+        margin-left: 35%;
+    }
+
+    #arab-spring-info {
+        font-size: 80%;
+    }
+
+    #economic-liberation-info {
+        font-size: 80%;
+    }
+
+    #mohamed-bouaziz-info {
+        font-size: 80%;
+    }
+
+    #egypt-info {
+        font-size: 80%;
+    }
+
+    #social-media-info {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    p.summary {
+        font-size: 100%;
+    }
+
+    p.cultures {
+        font-size: 30px;
+    }
+
+    div.topics-row2 {
+        margin-top: 30px;
+    }
+
+    div.topics-row3 {
+        margin-top: 30px;
+    }
+
+    div.arab-spring {
+        height: 80px;
+        min-width: 100px;
+        margin-right: 50px;
+        margin-left: 40px;
+    }
+
+    div.economic-liberation {
+        height: 80px;
+        min-width: 100px;
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+
+    div.mohamed-bouaziz {
+        height: 80px;
+        min-width: 100px;
+        margin-right: 50px;
+        margin-left: 40px;
+    }
+
+    div.egypt {
+        height: 80px;
+        min-width: 100px;
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+
+    div.social-media {
+        height: 80px;
+        min-width: 100px;
+        margin-right: 33%;
+        margin-left: 33%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #arab-spring-info {
+        font-size: 65%;
+    }
+
+    #economic-liberation-info {
+        font-size: 65%;
+    }
+
+    #mohamed-bouaziz-info {
+        font-size: 65%;
+    }
+
+    #egypt-info {
+        font-size: 65%;
+    }
+
+    #social-media-info {
+        font-size: 65%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div.arab-spring {
+        height: 60px;
+    }
+
+    div.japan-culture {
+        height: 60px;
+    }
+
+    div.mohamed-bouaziz {
+        height: 60px;
+    }
+
+    div.egypt {
+        height: 60px;
+    }
+
+    div.social-media {
+        height: 60px;
+    }
+
+    #arab-spring-info {
+        font-size: 50%;
+    }
+
+    #economic-liberation-info {
+        font-size: 50%;
+    }
+
+    #mohamed-bouaziz-info {
+        font-size: 50%;
+    }
+
+    #egypt-info {
+        font-size: 50%;
+    }
+
+    #social-media-info {
+        font-size: 50%;
+    }
+}
+

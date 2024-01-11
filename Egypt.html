@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Unit 9 Project | Egypt</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-sccale=1">
+        <meta name="keywords" content="Hoggard, AP World History, Hoggard AP World History, Mr. Pomeroy">
+        <meta name="description" content="The AP World History Unit 9 Project">
+        <link rel="stylesheet" href="Navbar.css">
+        <link rel="stylesheet" href="Egypt.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="icon" href="images_folder/apworld-mrpomeroy.jpg">
+    </head>
+    <body>
+      <div class="Upper-navbar" id="upper-navbar-main">
+        <div class="Upper-navbar-logo-container">
+        <div class="Upper-navbar-logo">
+          <a class="Unit-9" href="./">
+          Unit 9 Project
+          </a>
+          <img class="hoggard-logo-upper-navbar" src="images_folder/hoggard_logo.png">
+        </div>
+        </div>
+        <div class="Upper-navbar-buttons">
+          <a class="Arab_Spring" href="./Arab_Spring">
+          Arab Spring
+          </a>
+          <a class="Economic_Liberation" href="./Economic_Liberation">
+          Economic Liberation
+          </a>
+          <a class="Mohamed_Bouaziz" href="./Mohamed_Bouaziz">
+          Mohamed Bouaziz
+          </a>
+          <a class="Egypt" href="./Egypt">
+          Egypt
+          </a>
+          <a class="Social_Media" href="./Social_Media">
+          Social Media
+          </a>
+        </div>
+  
+        <div class="navbar-menu-button-containter">
+          <div class="navbar-menu-button-bars-containter" onclick="toggleMenu(this)">
+            <div class="navbar-menu-button-bar1"></div>
+            <div class="navbar-menu-button-bar2"></div>
+            <div class="navbar-menu-button-bar3"></div>
+          </div>
+        </div>
+        <div id="Upper-navbar-buttons-menu-container-override">
+        <div id="Upper-navbar-buttons-menu-container">
+        <div id="Upper-navbar-buttons-menu">
+          
+          <div class="menu-Arab_Spring-container">
+            <a class="menu-Arab_Spring" href="./Arab_Spring">Arab Spring</a>
+          </div>
+          <div class="menu-Economic_Liberation-container">
+            <a class="menu-Economic_Liberation" href="./Economic_Liberation">Economic Liberation</a>
+          </div>
+          <div class="menu-Mohamed_Bouaziz-container">
+          <a class="menu-Mohamed_Bouaziz" href="./Mohamed_Bouaziz">Mohamed Bouaziz</a>
+          </div>
+          <div class="menu-Egypt-container">
+            <a class="menu-Egypt" href="./Egypt">Egypt</a>
+          </div>
+          <div class="menu-Social_Media-container">
+            <a class="menu-Social_Media" href="./Social_Media">Social Media</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+          <div class="body-container">
+            <div class="main-page-container">
+              <div class="left-screen-space" id="left-screen-space">
+              </div>
+              <div class="main-page" id="main-page">
+                <div class="topic-summary">
+                  <div class="topic-summary-container">
+                    <p class="topic-summary">About Egypt</p>
+                  </div>
+                    <div class="summary-text-container">
+                      <div class="summary-text">
+                        <p class="summary-text">Egypt
+                        </p>
+                      </div>
+                    </div>
+                    <div class="images">
+                      <img class="image" src="images_folder/apworld-egypt2.jpg">
+                      <img class="image" src="images_folder/apworld-egypt1.webp">
+                    </div>
+                </div>
+              </div>
+              <div class="right-screen-space" id="right-screen-space"></div>
+              </div>
+            </div>
+            <div class="footer">
+              <p class="footer-made-by">Website by John Guo</p>
+              <p class="footer-county">In compliance with Federal law, including Section 504 of the 1973 
+                Rehabilitation Act and the provisions of Title IX of the Education Amendments of 1972, 
+                New Hanover County Schools administers all state-operated educational programs, employment 
+                activities, and admissions without discrimination because of disability, race, religion, 
+                national, or ethnic origin, color, age, military service, or gender except where exemption 
+                is appropriate and allowed by law.
+              </p>
+            </div>
+          <script>
+            function toggleMenu(x) {
+              x.classList.toggle("animate");
+              }
+
+              var navbarMenuButton = document.getElementsByClassName("navbar-menu-button-bars-containter");
+              var x;
+              for (x = 0; x < navbarMenuButton.length; x++) {
+                navbarMenuButton[x].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  let menuCollapsible = document.getElementById("Upper-navbar-buttons-menu");
+                  if (menuCollapsible.style.display === "flex") {
+                    menuCollapsible.style.display = "none";
+                    document.getElementById("Upper-navbar-buttons-menu-container").style.display = "none";
+                    document.getElementById("upper-navbar-main").style.paddingBottom = "20px";
+                  } else {
+                    document.getElementById("upper-navbar-main").style.paddingBottom = "0px";
+                    document.getElementById("Upper-navbar-buttons-menu-container").style.display = "flex";
+                    menuCollapsible.style.display = "flex";
+                  }
+                });
+              }
+        </script>
+    </body>
+</html>
