@@ -112,9 +112,10 @@ div.topics-heading {
 }
 
 p.topics {
-    font-size: 40px;
+    font-size: 37px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px 10px rgb(0, 0, 0);
     user-select: none;
@@ -717,7 +718,7 @@ div.footer {
         height: 60px;
     }
 
-    div.japan-culture {
+    div.economic-liberation {
         height: 60px;
     }
 
