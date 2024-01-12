@@ -37,14 +37,69 @@ p.footer-county {
 div.background-image {
     display: flex;
     flex: 1;
-    min-height: 400px;
+    flex-direction: column;
+    height: 600px;
     max-height: 600px;
     background-color: rgb(13, 105, 128);
-    background-image: url(images_folder/ap-world-map.png);
-    background-size: cover;
-    background-position-y: 30%;
+    background-image: url(images_folder/ap-world-map2.png);
+    background-size: 105%;
+    background-position-y: 40%;
     border-bottom: 5px solid rgb(0, 0, 0);
     align-items: center;
+}
+
+div.pomeroy-container {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    padding-right: 20%;
+}
+
+img.pomeroy-image {
+    height: 100%;
+    width: 7%;
+}
+
+div.ap-world-h1 {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    padding-right: 5%;
+    padding-top: 7%;
+}
+
+div.history-h1 {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
+h1.ap-world {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .95;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    user-select: none;
+}
+
+h1.history {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .95;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 10px rgb(0, 0, 0);
+    user-select: none;
 }
 
 div.summary-page {
@@ -464,6 +519,24 @@ div.footer {
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1350px) {
+    img.pomeroy-image {
+        width: 7%;
+    }
+    
+    h1.ap-world {
+        font-size: 50px;
+    }
+    
+    h1.history {
+        font-size: 50px;
+    }
+
+    div.background-image {
+        height: 500px;
+    }
+}    
+
 @media screen and (max-width: 1065px) {
     div.hoggard-background-image {
         justify-content: center;
@@ -503,6 +576,22 @@ div.footer {
     div.topics-row3 {
         margin-top: 50px;
     }
+
+    img.pomeroy-image {
+        width: 6%;
+    }
+    
+    h1.ap-world {
+        font-size: 40px;
+    }
+    
+    h1.history {
+        font-size: 40px;
+    }
+
+    div.background-image {
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -520,6 +609,37 @@ div.footer {
 
     #egypt-box {
         margin-right: 30px;
+    }
+
+    div.pomeroy-container {
+        padding-right: 15%;
+    }
+
+    img.pomeroy-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    a.Unit-9 {
+        text-shadow: rgb(0, 0, 0) 1px 1px 3px;
+    }
+    
+    h1.ap-world {
+        font-size: 30px;
+        text-shadow: rgb(0, 0, 0) 1px 1px 3px;
+    }
+
+    div.history-h1 {
+        padding-right: 7%;
+    }
+    
+    h1.history {
+        font-size: 30px;
+        text-shadow: rgb(0, 0, 0) 1px 1px 3px;
+    }
+
+    div.background-image {
+        height: 350px;
     }
 }
 
@@ -578,6 +698,35 @@ div.footer {
         align-items: center;
         height: fit-content;
         background-position-y: center;
+    }
+
+    div.pomeroy-container {
+        padding-right: 19%;
+    }
+
+    img.pomeroy-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    h1.ap-world {
+        font-size: 27px;
+    }
+
+    div.ap-world-h1 {
+        padding-right: 7%;
+    }
+
+    div.history-h1 {
+        padding-right: 10%;
+    }
+    
+    h1.history {
+        font-size: 27px;
+    }
+
+    div.background-image {
+        height: 300px;
     }
 }
 
@@ -638,6 +787,37 @@ div.footer {
     }
 }
 
+@media screen and (max-width: 670px) {
+    div.pomeroy-container {
+        padding-right: 19%;
+    }
+
+    img.pomeroy-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    h1.ap-world {
+        font-size: 25px;
+    }
+
+    div.ap-world-h1 {
+        padding-right: 7%;
+    }
+
+    div.history-h1 {
+        padding-right: 10%;
+    }
+    
+    h1.history {
+        font-size: 25px;
+    }
+
+    div.background-image {
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 560px) {
     p.summary {
         font-size: 100%;
@@ -688,6 +868,35 @@ div.footer {
         min-width: 100px;
         margin-right: 33%;
         margin-left: 33%;
+    }
+
+    div.pomeroy-container {
+        padding-right:22%;
+    }
+
+    img.pomeroy-image {
+        width: 40px;
+        height: 40px;
+    }
+    
+    h1.ap-world {
+        font-size: 23px;
+    }
+
+    div.ap-world-h1 {
+        padding-right: 7%;
+    }
+
+    div.history-h1 {
+        padding-right: 10%;
+    }
+    
+    h1.history {
+        font-size: 23px;
+    }
+
+    div.background-image {
+        height: 200px;
     }
 }
 
@@ -752,6 +961,35 @@ div.footer {
 
     #social-media-info {
         font-size: 50%;
+    }
+
+    div.pomeroy-container {
+        padding-right:22%;
+    }
+
+    img.pomeroy-image {
+        width: 30px;
+        height: 30px;
+    }
+    
+    h1.ap-world {
+        font-size: 18px;
+    }
+
+    div.ap-world-h1 {
+        padding-right: 5%;
+    }
+
+    div.history-h1 {
+        padding-right: 10%;
+    }
+    
+    h1.history {
+        font-size: 18px;
+    }
+
+    div.background-image {
+        height: 170px;
     }
 }
 

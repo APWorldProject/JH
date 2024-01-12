@@ -98,8 +98,8 @@ p.topic-summary {
 
 div.summary-text-container {
     display: block;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 div.summary-text {
@@ -143,11 +143,15 @@ div.images {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    p.summary-text {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 520px) {
     p.summary-text {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     p.summary-accomplish-text {
@@ -165,7 +169,7 @@ div.images {
     }
 
     p.summary-text {
-        font-size: 16px;
+        font-size: 13px;
     }
 }
 
@@ -175,6 +179,6 @@ div.images {
     }
 
     p.summary-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
