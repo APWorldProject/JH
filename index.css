@@ -54,7 +54,7 @@ div.pomeroy-container {
     justify-content: right;
     align-items: center;
     width: 100%;
-    padding-right: 20%;
+    margin-right: 20%;
 }
 
 img.pomeroy-image {
@@ -68,7 +68,7 @@ div.ap-world-h1 {
     width: 100%;
     justify-content: right;
     align-items: center;
-    padding-right: 5%;
+    margin-right: 5%;
     padding-top: 7%;
 }
 
@@ -78,7 +78,7 @@ div.history-h1 {
     width: 100%;
     justify-content: right;
     align-items: center;
-    padding-right: 10%;
+    margin-right: 10%;
     padding-bottom: 10%;
 }
 
@@ -612,7 +612,7 @@ div.footer {
     }
 
     div.pomeroy-container {
-        padding-right: 15%;
+        margin-right: 15%;
     }
 
     img.pomeroy-image {
@@ -630,7 +630,7 @@ div.footer {
     }
 
     div.history-h1 {
-        padding-right: 7%;
+        margin-right: 7%;
     }
     
     h1.history {
@@ -701,7 +701,7 @@ div.footer {
     }
 
     div.pomeroy-container {
-        padding-right: 19%;
+        margin-right: 19%;
     }
 
     img.pomeroy-image {
@@ -714,11 +714,11 @@ div.footer {
     }
 
     div.ap-world-h1 {
-        padding-right: 7%;
+        margin-right: 7%;
     }
 
     div.history-h1 {
-        padding-right: 10%;
+        margin-right: 10%;
     }
     
     h1.history {
@@ -789,7 +789,7 @@ div.footer {
 
 @media screen and (max-width: 670px) {
     div.pomeroy-container {
-        padding-right: 19%;
+        margin-right: 19%;
     }
 
     img.pomeroy-image {
@@ -802,11 +802,11 @@ div.footer {
     }
 
     div.ap-world-h1 {
-        padding-right: 7%;
+        margin-right: 7%;
     }
 
     div.history-h1 {
-        padding-right: 10%;
+        margin-right: 10%;
     }
     
     h1.history {
@@ -871,7 +871,7 @@ div.footer {
     }
 
     div.pomeroy-container {
-        padding-right:22%;
+        margin-right:22%;
     }
 
     img.pomeroy-image {
@@ -884,11 +884,11 @@ div.footer {
     }
 
     div.ap-world-h1 {
-        padding-right: 7%;
+        margin-right: 7%;
     }
 
     div.history-h1 {
-        padding-right: 10%;
+        margin-right: 10%;
     }
     
     h1.history {
@@ -964,7 +964,7 @@ div.footer {
     }
 
     div.pomeroy-container {
-        padding-right:22%;
+        margin-right:22%;
     }
 
     img.pomeroy-image {
@@ -977,11 +977,11 @@ div.footer {
     }
 
     div.ap-world-h1 {
-        padding-right: 5%;
+        margin-right: 5%;
     }
 
     div.history-h1 {
-        padding-right: 10%;
+        margin-right: 10%;
     }
     
     h1.history {
