@@ -38,8 +38,8 @@ div.background-image {
     display: flex;
     flex: 1;
     flex-direction: column;
-    height: 600px;
-    max-height: 600px;
+    height: 650px;
+    max-height: 650px;
     background-color: rgb(13, 105, 128);
     background-image: url(images_folder/ap-world-map2.png);
     background-size: 105%;
